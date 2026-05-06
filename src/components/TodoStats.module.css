@@ -1,0 +1,50 @@
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: 16px 32px;
+  box-shadow: var(--shadow-card);
+  border: 1.5px solid var(--color-border);
+  margin-bottom: 20px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 28px;
+}
+
+.divider {
+  width: 1px;
+  height: 36px;
+  background: var(--color-border);
+}
+
+.statValue {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--color-text);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.activeValue {
+  color: var(--color-primary);
+}
+
+.completedValue {
+  color: var(--color-success);
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-top: 2px;
+}
