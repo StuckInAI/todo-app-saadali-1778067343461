@@ -26,7 +26,7 @@
   border-radius: var(--radius-full);
   background: var(--color-primary);
   margin-bottom: 16px;
-  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 4px 16px rgba(239, 68, 68, 0.3);
 }
 
 .logoIcon {

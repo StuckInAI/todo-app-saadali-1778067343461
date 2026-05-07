@@ -12,7 +12,7 @@
 
 .form:focus-within {
   border-color: var(--color-border-focus);
-  box-shadow: 0 4px 24px rgba(99, 102, 241, 0.18);
+  box-shadow: 0 4px 24px rgba(239, 68, 68, 0.18);
 }
 
 .input {

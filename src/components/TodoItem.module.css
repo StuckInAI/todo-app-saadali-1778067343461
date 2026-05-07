@@ -12,7 +12,7 @@
 
 .item:hover {
   border-color: var(--color-primary);
-  box-shadow: 0 2px 12px rgba(99,102,241,0.12);
+  box-shadow: 0 2px 12px rgba(239, 68, 68, 0.12);
 }
 
 .item.completed {
@@ -66,7 +66,7 @@
   padding: 4px 8px;
   outline: none;
   background: var(--color-surface);
-  box-shadow: 0 0 0 3px rgba(99,102,241,0.10);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.10);
 }
 
 .actions {
@@ -99,7 +99,7 @@
 }
 
 .deleteBtn:hover {
-  background: #fee2e2;
+  background: #fecaca;
   color: var(--color-danger);
 }
 
@@ -109,6 +109,6 @@
 }
 
 .cancelBtn:hover {
-  background: #fee2e2;
+  background: #fecaca;
   color: var(--color-danger);
 }

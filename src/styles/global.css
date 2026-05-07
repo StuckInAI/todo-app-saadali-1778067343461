@@ -1,19 +1,19 @@
 :root {
-  --color-bg: #f0f4ff;
+  --color-bg: #fff5f5;
   --color-surface: #ffffff;
-  --color-surface-alt: #f8f9ff;
-  --color-primary: #6366f1;
-  --color-primary-hover: #4f46e5;
-  --color-primary-light: #e0e7ff;
-  --color-danger: #ef4444;
-  --color-danger-hover: #dc2626;
+  --color-surface-alt: #fff8f8;
+  --color-primary: #ef4444;
+  --color-primary-hover: #dc2626;
+  --color-primary-light: #fee2e2;
+  --color-danger: #b91c1c;
+  --color-danger-hover: #991b1b;
   --color-success: #22c55e;
-  --color-text: #1e1b4b;
+  --color-text: #3b0a0a;
   --color-text-secondary: #6b7280;
   --color-text-muted: #9ca3af;
-  --color-border: #e2e8f0;
-  --color-border-focus: #6366f1;
-  --color-shadow: rgba(99, 102, 241, 0.12);
+  --color-border: #fecaca;
+  --color-border-focus: #ef4444;
+  --color-shadow: rgba(239, 68, 68, 0.12);
   --color-completed-text: #9ca3af;
 
   --radius-sm: 6px;
@@ -23,8 +23,8 @@
 
   --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
-  --shadow-card: 0 4px 24px rgba(99, 102, 241, 0.10);
-  --shadow-input: 0 2px 8px rgba(99, 102, 241, 0.08);
+  --shadow-card: 0 4px 24px rgba(239, 68, 68, 0.10);
+  --shadow-input: 0 2px 8px rgba(239, 68, 68, 0.08);
   --transition: 0.18s ease;
 }
 
