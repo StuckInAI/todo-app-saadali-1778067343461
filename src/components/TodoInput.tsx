@@ -4,9 +4,10 @@ import styles from './TodoInput.module.css';
 
 type TodoInputProps = {
   onAdd: (text: string) => void;
+  inputRef?: React.RefObject<HTMLInputElement | null>;
 };
 
-export default function TodoInput({ onAdd }: TodoInputProps) {
+export default function TodoInput({ onAdd, inputRef }: TodoInputProps) {
   const [value, setValue] = useState('');
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>): void {
@@ -20,9 +21,10 @@ export default function TodoInput({ onAdd }: TodoInputProps) {
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       <input
+        ref={inputRef}
         className={styles.input}
         type="text"
-        placeholder="Add a new todo…"
+        placeholder="Add a new todo… (press N to focus)"
         value={value}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => setValue(e.target.value)}
         autoFocus

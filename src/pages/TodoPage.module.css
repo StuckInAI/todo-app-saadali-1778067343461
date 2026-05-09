@@ -47,6 +47,13 @@
 .subtitle {
   color: var(--color-text-secondary);
   font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.hintRow {
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
 }
 
 .main {
