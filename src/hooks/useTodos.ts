@@ -2,28 +2,16 @@ import { useState, useEffect } from 'react';
 import type { Todo, FilterType } from '@/types';
 
 const STORAGE_KEY = 'todo-app-todos';
-const DEFAULT_TODOS: Omit<Todo, 'id'>[] = [
-  { text: 'Welcome to your Todo App! 🎉', completed: false, createdAt: Date.now() - 4000 },
-  { text: 'Try pressing ? to see keyboard shortcuts', completed: false, createdAt: Date.now() - 3000 },
-  { text: 'Click a todo to mark it as complete', completed: true, createdAt: Date.now() - 2000 },
-  { text: 'Use filters to view active or completed todos', completed: false, createdAt: Date.now() - 1000 },
-];
 
 function loadTodos(): Todo[] {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) {
-      return DEFAULT_TODOS.map(todo => ({
-        ...todo,
-        id: generateId(),
-      }));
+      return [];
     }
     return JSON.parse(raw) as Todo[];
   } catch {
-    return DEFAULT_TODOS.map(todo => ({
-      ...todo,
-      id: generateId(),
-    }));
+    return [];
   }
 }
 
